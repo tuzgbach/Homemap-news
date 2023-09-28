@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Color from "../Shared/Color";
 import { Entypo } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 import * as WebBrowser from "expo-web-browser";
 
 function ReadNews() {
@@ -35,7 +36,7 @@ function ReadNews() {
           justifyContent: "space-between",
         }}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Entypo name="back" size={24} color="black" />
+          <AntDesign name="back" size={24} color="black" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => shareNews()}>
           <Entypo name="share" size={24} color="black" />
